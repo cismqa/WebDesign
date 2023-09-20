@@ -1,3 +1,12 @@
 h3,h4 {
     color:aqua; 
+    @import url(https://db.onlinewebfonts.com/c/eed8e04cdfd9f975fa0117715f24756e?family=BankSans+CapsEF+EL+Bol);
+}@font-face {
+    font-family: "BankSans CapsEF EL Bol";
+    src: url("https://db.onlinewebfonts.com/t/eed8e04cdfd9f975fa0117715f24756e.eot");
+    src: url("https://db.onlinewebfonts.com/t/eed8e04cdfd9f975fa0117715f24756e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/eed8e04cdfd9f975fa0117715f24756e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/eed8e04cdfd9f975fa0117715f24756e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/eed8e04cdfd9f975fa0117715f24756e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/eed8e04cdfd9f975fa0117715f24756e.svg#BankSans CapsEF EL Bol")format("svg");
 }
