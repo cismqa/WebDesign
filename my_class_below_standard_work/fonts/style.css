@@ -1,0 +1,20 @@
+h1{
+    color:darkolivegreen; 
+}
+
+p{
+    color: seagreen;
+}
+
+body {
+    background-color:lightgreen;
+  }
+
+h3{
+    color: green; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
