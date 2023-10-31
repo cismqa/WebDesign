@@ -6,6 +6,9 @@
 <body>
 <h1>Two Truths and a Lie</h1>
 <h2>wahoo</h2>
+<p id="secret"></p>
+<button onclick="reveal()">Reveal</button>
+<button onclick="getElementById('secret').style.display='none'">Hide</button>
 <hr>
 <form>
         <label for="fname">First name:</label><br>
@@ -14,6 +17,7 @@
         <input type="text" id="lname" name="lname"><br>
         <label for="pronouns">Pronouns:</label><br>
         <input type="text" id="pronouns" name="pronouns"><br>
+        <input type="submit" value="submit" onclick="hello()">
 </form>
 <hr>
 <p>Choose your favorite Studio Ghibli film:</p>
@@ -28,14 +32,60 @@
 </form> 
 <hr>
 <p>2 Truths and a Lie. Which is the lie?</p>
-<form>
+<form id="2truths1lie">
   <input type="radio" id="truth1" name="2truths" value="truth1">
   <label for="truth1">I have made hundreds of dollars off competitive gaming</label><br>
   <input type="radio" id="lie" name="2truths" value="lie">
   <label for="lie">I stayed awake during the entire duration of Christopher Nolan's <i>Tenet</i> </label><br>
   <input type="radio" id="truth2" name="2truths" value="truth2">
   <label for="truth2">I have owned Seahawks season tickets for 12 years</label><br><br>
-  <input id="submit" type="submit" value="Submit">
+<input type="button" value="Submit" onclick="checkTruth()">
 </form> 
+<p id="answer"></p>
+
+<hr>
+<p>2 Truths and a Lie. Which two are true?</p>
+<form id="2truths1lie">
+<input type="checkbox" id="truth1" name="brothers" value="Brothers">
+<label for="brothers"> I have two brothers</label><br>
+<input type="checkbox" id="lie" name="brother" value="Brother">
+<label for="brother"> I have 1 brother</label><br>
+<input type="checkbox" id="truth2" name="sister" value="Sister">
+<label for="sister"> I do not have a sister</label><br>
+<br>
+<input type="button" value="Submit" onclick="checkTruth()">
+</form>
+<p id="answer"></p>
+
+<script>
+  function reveal() {
+    document.getElementById('secret').innerHTML='shhh secret';
+    getElementById('secret').style.display='block'
+  }
+  function hello() {
+    let name= document.getElementById('fname').value;
+    alert("Hi,"+ name);
+  }
+
+function checkTruth () {
+  let answerTag = document.getElementById('answer')
+  if (document.getElementById('lie').checked) {
+    answerTag.innerHTML = 'lie';
+    answerTag.style.color = "green";
+    answerTag.style.display = 'block';
+  }
+  if (document.getElementById('truth1').checked) {
+    answerTag.innerHTML = 'truth';
+    answerTag.style.color = "red";
+    answerTag.style.display = 'block';
+  }
+  if (document.getElementById('truth2').checked) {
+    answerTag.innerHTML = 'truth';
+    answerTag.style.color = "red";
+    answerTag.style.display = 'block';
+  }
+}
+
+</script>
 </body>
 </html>
