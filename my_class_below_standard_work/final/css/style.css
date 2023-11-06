@@ -1,0 +1,16 @@
+body {
+    background-color: #c2ddd8
+}
+li a:hover {
+    background-color: #c2ddd8;
+  }
+  @font-face {
+    font-family: "rustica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/mig0dxi.css)
+  }
+  
+  div {
+    font-family: rustica;
+  }

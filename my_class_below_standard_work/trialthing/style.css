@@ -1,0 +1,37 @@
+  .bus-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+     'one'
+     'three'
+     'five';
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+  }
+  
+  .bus {
+    padding: 2rem;
+    border-radius: 0.5rem;
+     background-color: lightgrey;
+  }
+  
+  .bus:nth-child(1) {
+    grid-area: one;
+  }
+  .bus:nth-child(3) {
+    grid-area: three;
+  }
+  .bus:nth-child(5) {
+    grid-area: five;
+  }
+  
+  @media screen and (min-width: 75em) {
+    .bus-grid {
+        grid-template-areas:
+        "one one one five"
+        "three three three five";
+    }
+  }
+  

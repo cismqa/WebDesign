@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Demo</title>
+    </head>
+    <body>
+        <h1>Cry to JavaScript again! Yay!</h1>
+        <h2>How to do onclick events</h2>
+        <a href="https://eastsideprep.org" target="_blank"
+            onclick="alert('Warning: You are leaving this page')">school website much cool
+        </a>
+        <hr> 
+        <h2>Display a secret message on button click </h2>
+        <p id="secret"></p>
+        <button
+            onclick="document.getElementById('secret').innerHTML='shhh very secret also we are in a library';
+                getElementById('secret').style.display='block'"
+                >Reveal a secret</button>
+        <button 
+        onclick="document.getElementById('secret').innerHTML='shhh very secret also we are in a library';
+            getElementById('secret').style.display='none'">Hide the secret</button>
+            
+<p>Choose your favorite Studio Ghibli film:</p>
+<form action="/action_page.php">
+  <input type="radio" id="kiki" name="fav_ghibli" value="kiki">
+  <label for="kiki">Kiki's Delivery Service</label><br>
+  <input type="radio" id="totoro" name="fav_ghibli" value="totoro">
+  <label for="totoro">My Neighbor Totoro</label><br>
+  <input type="radio" id="heron" name="fav_ghibli" value="heron">
+  <label for="heron">Boy and the Heron</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+    </body>
+</html>
