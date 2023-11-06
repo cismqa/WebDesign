@@ -1,16 +1,20 @@
-body {
+body:not(nav, .navbar){
     background-color: #c2ddd8
 }
 li a:hover {
-    background-color: #c2ddd8;
+    background-color: white;
   }
   @font-face {
-    font-family: "rustica", sans-serif;
+    font-family: "rustica";
     font-weight: 400;
     font-style: normal;
     src: url(https://use.typekit.net/mig0dxi.css)
   }
   
-  div {
+div {
     font-family: rustica;
-  }
+}
+.navbar-nav {
+    background-color: #54848c;
+    font-size: x-large;
+}
