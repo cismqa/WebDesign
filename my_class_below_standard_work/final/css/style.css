@@ -1,10 +1,10 @@
-body:not(nav, .navbar){
-    background-color: #c2ddd8
+body:not(nav, .popup){
+    background-color: white;
 }
 li a:hover {
     background-color: white;
   }
-  @font-face {
+@font-face {
     font-family: "rustica";
     font-weight: 400;
     font-style: normal;
@@ -12,9 +12,42 @@ li a:hover {
   }
   
 div {
-    font-family: rustica;
+    font-family: "rustica";
+    font-weight: 400;
+    font-style: normal;
 }
-.navbar-nav {
-    background-color: #54848c;
-    font-size: x-large;
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.popup {
+  background-color: #c2ddd8;
+  color:#54848c;
+}
+.navbar ul a{
+  text-decoration: none;
+}
+.navbar li a:hover{
+  color: #54848c;
+  background-color: white;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: auto auto auto;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
