@@ -1,4 +1,4 @@
-body:not(nav, .popup){
+body:not(nav){
     background-color: white;
 }
 li a:hover {
@@ -19,12 +19,13 @@ div {
 
 .navbar ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   color: black;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
   border-bottom: 3px solid transparent;
+
 }
 
 .popup {
@@ -41,9 +42,7 @@ div {
 .grid-container {
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: auto auto auto;
-  margin: 10px;
-  margin-bottom: 20px;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
@@ -51,78 +50,106 @@ div {
   font-size: 30px;
   text-align: center;
 }
+li a:hover {
+  background-color: #c2ddd8;
+}
 
-    .grid-container {
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-        }
-    .grid-item {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      font-size: 30px;
-      text-align: center;
-    }
-    .grid-item-var {
-        grid-column: 1/span 4; 
-        grid-row: 1; 
-        background-color: #c2ddd8;
-      padding: 30px;
-      font-size: 20px;
-      text-align: center;
-    }
-    .grid-item-var2 {
-        grid-column: 1/span 4; 
-        grid-row: 5; 
-        background-color: #54848c;
-      padding: 30px;
-      font-size: 20px;
-      text-align: center;
-    }
-    .grid-item-img {
-        grid-column: 1/span 2; 
-        grid-row: 2; 
-        background-color: white;
-      padding: 60px;
-      font-size: 20px;
-      text-align: center;
-    }
-    .grid-item-img2 {
-        grid-column: 3/span 2; 
-        grid-row: 3; 
-        background-color: white;
-      padding: 60px;
-      font-size: 20px;
-      text-align: center;
-    }
-    .grid-item-img3 {
-        grid-column: 1/span 2; 
-        grid-row: 4; 
-        background-color: white;
-      padding: 60px;
-      font-size: 20px;
-      text-align: center;
-    }
-    .grid-item-txt {
-        grid-column: 3/span 2; 
-        grid-row: 2; 
-        background-color: whitesmoke;
-      padding: 60px;
-      font-size: 20px;
-      text-align: center;
-    }
-    .grid-item-txt2 {
-        grid-column: 1/span 2; 
-        grid-row: 3; 
-        background-color: whitesmoke;
-      padding: 60px;
-      font-size: 20px;
-      text-align: center;
-    }
-    .grid-item-txt3 {
-        grid-column: 3/span 2; 
-        grid-row: 4; 
-        background-color: whitesmoke;
-      padding: 60px;
-      font-size: 20px;
-      text-align: center;
-    }
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+.grid-item-var {
+grid-column: 1/span 4; 
+grid-row: 1; 
+background-color: #c2ddd8;
+padding: 30px;
+font-size: 20px;
+text-align: center;
+}
+.grid-item-var2 {
+grid-column: 1/span 4; 
+grid-row: 7; 
+background-color: #54848c;
+padding: 30px;
+font-size: 20px;
+text-align: center;
+}
+.grid-item-var3 {
+grid-column: 1/span 4; 
+grid-row: 3; 
+background-color: #54848c;
+padding: 30px;
+font-size: 40px;
+text-align: center;
+}
+.grid-item-var4 {
+grid-column: 1/span 4; 
+grid-row: 4; 
+background-color: #2f444c;
+padding: 30px;
+font-size: 30px;
+text-align: center;
+}
+.grid-item-img {
+grid-column: 1/span 2; 
+grid-row: 2; 
+background-color: white;
+padding: 150px;
+font-size: 20px;
+text-align: center;
+}
+.grid-item-img2 {
+grid-column: 3/span 2; 
+grid-row: 5; 
+background-color: white;
+padding: 60px;
+font-size: 20px;
+text-align: center;
+}
+.grid-item-img3 {
+grid-column: 1/span 2; 
+grid-row: 6; 
+background-color: white;
+padding: 60px;
+font-size: 20px;
+text-align: center;
+}
+.grid-item-txt {
+grid-column: 3/span 2; 
+grid-row: 2; 
+background-color: white;
+padding: 150px;
+font-size: 20px;
+text-align: center;
+}
+.grid-item-txt2 {
+grid-column: 1/span 2; 
+grid-row: 5; 
+background-color: whitesmoke;
+padding: 60px;
+font-size: 20px;
+text-align: center;
+}
+.grid-item-txt3 {
+grid-column: 3/span 2; 
+grid-row: 6; 
+background-color: whitesmoke;
+padding: 60px;
+font-size: 20px;
+text-align: center;
+}
+
+button {
+position: relative;
+background-color: #54848c;
+border: none;
+font-size: 28px;
+color: #c2ddd8;
+padding: 20px;
+width: auto;
+text-align: center;
+text-decoration: none;
+border-radius: 12px;
+}
