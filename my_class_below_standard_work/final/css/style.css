@@ -70,6 +70,7 @@ padding: 30px;
 font-size: 20px;
 text-align: center;
 }
+
 .grid-item-var2 {
 grid-column: 1/span 4; 
 grid-row: 7; 
@@ -152,4 +153,7 @@ width: auto;
 text-align: center;
 text-decoration: none;
 border-radius: 12px;
+}
+ul {
+  list-style: none;
 }
